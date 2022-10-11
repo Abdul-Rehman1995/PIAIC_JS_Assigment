@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+    /* 
+        BMI (Body Mass Calculator) CALCULATOR
+            Question = Set value Of height in inches and weight in pounds, then convert the values to centimeters and kilos ?
+            Output the result. then calculate and log the BMI this is equal to weight in Kilos divided by squared height in meters. 
+    
+        Example 
+            BMI Height in inches : 12 Inches 
+            BMI Weight in Pounds : 10 Pounds
+            BMI Height Convert Inches into centimeters : ?? To Convert the inches to cm user must be multiply with fix value "2.54"
+            BMI Weight Convert Inches into kilos : ?? To Convert the pounds to kilos user must be divide with fix value "2.205"
+            BMI Weight Kilos / squared height in meters : ??  
+    */
+  
+    let BMI_height_in_Inches = prompt('Give BMI Height In Inches');
+    let BMI_Weight_in_Pounds = prompt('Give BMI Weight In Pounds');
+   
+    // For Inches Convert into Cetimeters
+        let Fix_value_For_Convert_Inches_into_CentiMeter = 2.54;
+        let Resut_InchestoCentimeter = BMI_height_in_Inches * Fix_value_For_Convert_Inches_into_CentiMeter;
+        console.log(Resut_InchestoCentimeter, "Centimeters" );
+
+    // For Pounds Convert into Kilos
+        let Fix_value_For_Convert_Pounds_into_Kilos = 2.205;
+        let Resut_PoundsKilometers = BMI_Weight_in_Pounds / Fix_value_For_Convert_Pounds_into_Kilos;
+        console.log(Resut_PoundsKilometers, "Kilometers" );
+
+    // Formula for BMI is weight in kilograms divided by height in meters squared
+    // To Centimeter Convert in to square of meter user must be cm value divide 10000
+
+        let To_Covert_into_SquareCentemer_fixvalue = 10000;
+        let result_into_squareinmeters = Resut_InchestoCentimeter / To_Covert_into_SquareCentemer_fixvalue;
+        console.log(result_into_squareinmeters, "Square meter");
+        let final_result = Resut_PoundsKilometers / result_into_squareinmeters;
+        console.log("Your BMI Is ", final_result);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
